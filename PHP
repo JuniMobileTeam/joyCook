@@ -1,0 +1,6 @@
+Usage: sphp [phpversion]
+Versions installed:
+ - phpversion: 55
+ - phpversion: 56
+ - phpversion: 70
+ - phpversion: 71
