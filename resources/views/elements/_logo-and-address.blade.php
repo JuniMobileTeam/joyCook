@@ -4,7 +4,7 @@
       <div class="cell-md-4 cell-lg-3">
         <!--Navbar Brand-->
         <div class="rd-navbar-brand text-left">
-          <a href="index.html" class="reveal-inline-block">
+          <a href="/" class="reveal-inline-block">
             <div class="unit unit-xs-middle unit-md unit-md-horizontal unit-spacing-xxs">
               <div class="unit-left">
                 <img width="89" height="89" src="images/logo-170x172.png" alt="Cook logo">
@@ -22,7 +22,7 @@
         </div><!-- end div.rd-navbar-brand -->
       </div><!-- end div.cell-lg-3 -->
 
-      <div class="cell-md-7 cell-lg-5 cell-xl-4">
+      <div class="cell-md-7 cell-lg-6 cell-xl-4">
         <div class="range">
           <div class="cell-sm-6">
             <div class="unit unit-horizontal unit-top unit-spacing-xs text-left">

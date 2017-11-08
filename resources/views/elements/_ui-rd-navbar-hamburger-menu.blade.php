@@ -75,10 +75,10 @@
       <div class="rd-navbar-menu-wrap clearfix">
         {{-- Logo/slogan --}}
         <div class="rd-navbar-brand">
-          <a href="index.html" class="reveal-inline-block">
+          <a href="/" class="reveal-inline-block">
             <div class="unit unit-xs-middle unit-xl unit-xl-horizontal unit-spacing-xxs">
               <div class="unit-left">
-                <img width="89" height="89" src="imgaes/logo-170x172.png" alt="Cooking logo">
+                <img width="89" height="89" src="images/logo-170x172.png" alt="Cooking logo">
               </div><!-- end div.unit-left -->
               <div class="unit-body text-xl-left">
                 <div class="rd-navbar-brand-title">joyCooking
@@ -97,13 +97,13 @@
             <div class="rd-navbar-mobile-header-wrap">
               {{-- Navbar Brand Mobile --}}
               <div class="rd-navbar-mobile-brand">
-                <a href="index.html">
+                <a href="/">
                   <img width="89" height="89" src="images/logo-170x172.png" alt="Cooking logo">
                 </a>
               </div><!-- end div.rd-navbar-mobile-brand -->
               {{-- RD Navbar Nav --}}
               <ul class="rd-navbar-nav">
-                <li><a href="index.html">Home</a></li><!-- home menu item -->
+                <li><a href="/">Home</a></li><!-- home menu item -->
                 {{-- Element menu item --}}
                 <li class="rd-navbar--has-dropdown rd-navbar-submenu">
                   <a href="#">Elements</a>

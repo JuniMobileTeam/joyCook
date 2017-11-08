@@ -5,14 +5,14 @@
       <div class="swiper-slide-caption">
         <div class="container">
           <div class="range range-xs-center range-lg-left">
-            <div class="cell-md-9.text-md-left.cell-xs-10">
+            <div class="cell-md-9 text-md-left cell-xs-10">
               <div class="jumbotron-custom bg-white-transparent">
                 <div style="z-index:9;" class="top-banner">
                   <h4 class="text-white">Món ăn cho ngày hôm nay</h4>
                 </div><!-- end div.top-banner -->
                 <div>
                   <h1 class="text-bold">
-                    <a href="#">Morocan Carrot Salad with Feta</a>
+                    <a href="#">Xà lách trộn cà rốt cùng phô-mát</a>
                   </h1>
                 </div>
                 <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60">

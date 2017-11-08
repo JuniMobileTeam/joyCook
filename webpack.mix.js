@@ -1,4 +1,19 @@
 let mix = require('laravel-mix');
+let ImageminPlugin = require('imagemin-webpack-plugin').default;
+
+/*
+  Config
+*/
+mix.webpackConfig({
+  plugins: [
+    new ImageminPlugin({
+      pngquant: {
+        quality: '95-100',
+      },
+      test: /\.(jpe?g|png|gif|svg)$/i,
+    }),
+  ],
+})
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +27,5 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/all.scss', 'public/css');
+   .sass('resources/assets/sass/all.scss', 'public/css')
+   .copy('resources/assets/images', 'public/images', false);
