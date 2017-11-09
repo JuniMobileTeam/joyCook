@@ -5,4 +5,5 @@
 @section('content')
   @include('elements/_masthead-swiper')
   @include('elements/_logo-and-address')
+  @include('elements/_greetings-statements')
 @endsection
