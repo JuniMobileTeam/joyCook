@@ -27,5 +27,6 @@ mix.webpackConfig({
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
+   .copy('resources/assets/js/core.min.js', 'public/js')
    .sass('resources/assets/sass/all.scss', 'public/css')
    .copy('resources/assets/images', 'public/images', false);
