@@ -11,6 +11,7 @@
     @include('elements/_special-selections')
     @include('elements/_sub-introduction')
     @include('elements/_latest-recipes')
+    @include('elements/_testimonials')
   </main>
 
 @endsection

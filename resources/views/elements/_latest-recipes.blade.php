@@ -98,5 +98,13 @@
       </div><!-- end div.cell-sm-6.cell-md-5 -->
       {{-- end second recipe --}}
     </div><!-- end div.range.offset-top-60 -->
+
+    {{-- view all recipes --}}
+    <div class="offset-top-50 offset-lg-top-56">
+      <a class="btn btn-icon btn-icon-right btn-madison" href="recipes.html">
+        <span class="icon fa-arrow-right"></span>
+        <span>Xem tất cả công thức mới nhất</span>
+      </a>
+    </div><!-- end div.offset-top-50 -->
   </div><!-- end div.shell-wide -->
 </section>
