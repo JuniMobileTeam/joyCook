@@ -8,6 +8,7 @@
     @include('elements/_masthead-swiper')
     @include('elements/_greetings-statements')
     @include('elements/_features-foods')
+    @include('elements/_special-selections')
   </main>
 
 @endsection
