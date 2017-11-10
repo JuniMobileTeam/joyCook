@@ -9,6 +9,8 @@
     @include('elements/_greetings-statements')
     @include('elements/_features-foods')
     @include('elements/_special-selections')
+    @include('elements/_sub-introduction')
+    @include('elements/_latest-recipes')
   </main>
 
 @endsection
