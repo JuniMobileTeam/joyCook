@@ -12,6 +12,7 @@
     @include('elements/_sub-introduction')
     @include('elements/_latest-recipes')
     @include('elements/_testimonials')
+    @include('elements/_latest-posts')
   </main>
 
 @endsection
