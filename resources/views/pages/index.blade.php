@@ -9,7 +9,7 @@
     <greetings></greetings>
     <features-recipes></features-recipes>
     <specials-selection></specials-selection>
-    @include('elements/_sub-introduction')
+    <sub-introduction></sub-introduction>
     @include('elements/_latest-recipes')
     @include('elements/_testimonials')
     @include('elements/_latest-posts')
