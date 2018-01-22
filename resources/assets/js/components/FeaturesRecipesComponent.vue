@@ -20,7 +20,7 @@
                 <h6>
                   <a :href="recipes.linkTo">{{ recipes.name }}</a>
                 </h6>
-                <a :href="recipes.linkTo" class="btn btn-primary">this.FeaturesRecipes.viewButtonTitle</a>
+                <a :href="recipes.linkTo" class="btn btn-primary">{{ FeaturesRecipes.viewButtonTitle }}</a>
               </div><!-- end div.post-news-body-variant-1 -->
             </article><!-- end article.post-news -->
           </div><!-- end div.cell-sm-6 fadeInRightSm -->

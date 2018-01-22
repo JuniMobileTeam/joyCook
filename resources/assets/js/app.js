@@ -12,6 +12,7 @@ Vue.component('swiped-masthead', require('./components/SwipedMastheadComponent.v
 Vue.component('specials-selection', require('./components/SpecialsSelectionComponent.vue'));
 Vue.component('sub-introduction', require('./components/SubIntroductionComponent.vue'));
 Vue.component('latest-recipes', require('./components/LatestRecipesComponent.vue'));
+Vue.component('testimonials', require('./components/TestimonialsComponent.vue'));
 
 const app = new Vue({
   el: '#app'

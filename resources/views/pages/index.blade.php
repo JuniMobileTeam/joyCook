@@ -11,7 +11,7 @@
     <specials-selection></specials-selection>
     <sub-introduction></sub-introduction>
     <latest-recipes></latest-recipes>
-    @include('elements/_testimonials')
+    <testimonials></testimonials>
     @include('elements/_latest-posts')
   </main>
 

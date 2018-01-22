@@ -528,6 +528,7 @@ Vue.component('swiped-masthead', __webpack_require__(16));
 Vue.component('specials-selection', __webpack_require__(22));
 Vue.component('sub-introduction', __webpack_require__(57));
 Vue.component('latest-recipes', __webpack_require__(62));
+Vue.component('testimonials', __webpack_require__(67));
 
 var app = new Vue({
   el: '#app'
@@ -13763,7 +13764,11 @@ var render = function() {
                               staticClass: "btn btn-primary",
                               attrs: { href: recipes.linkTo }
                             },
-                            [_vm._v("this.FeaturesRecipes.viewButtonTitle")]
+                            [
+                              _vm._v(
+                                _vm._s(_vm.FeaturesRecipes.viewButtonTitle)
+                              )
+                            ]
                           )
                         ])
                       ]
@@ -15186,6 +15191,366 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-c9476214", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(68)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(70)
+/* template */
+var __vue_template__ = __webpack_require__(71)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/TestimonialsComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6f392182", Component.options)
+  } else {
+    hotAPI.reload("data-v-6f392182", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(69);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("bdf9ef4c", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6f392182\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TestimonialsComponent.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6f392182\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TestimonialsComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 70 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      Testimonials: {
+        backgroundImageUrl: 'images/parallax-03.jpg',
+        quotes: [{
+          quoter: {
+            name: 'Bích Hằng',
+            avatar: {
+              url: 'images/users/user-debra-banks-230x230.jpg',
+              alt: 'User avarta'
+            },
+            address: 'Nội trợ, Cẩm Mỹ, Đồng Nai'
+          },
+          text: 'Mình đã nấu theo hơn 10 công thức từ Joy Cooking, những món ăn mình làm đều rất ngon. Món gần đây nhất mình thử là Gà xào ớt, thêm một mòn ăn ngon mình tạo ra. Mình muốn dành lời cảm ơn đến những công thức được đăng tải trên trang Web, với những hướng dẫn cụ thể và dể làm theo, Joy Cooking là một người bạn hỗ trợ nấu ăn tuyệt vời!'
+        }, {
+          quoter: {
+            name: 'Cường Linh',
+            avatar: {
+              url: 'images/users/user-steven-alvarez-230x230.jpg',
+              alt: 'User avarta'
+            },
+            address: 'Tài xế, Tân Bình, TP HCM'
+          },
+          text: 'Tôi đã làm theo món Gà Thổ Nhĩ Kỳ tối qua và đã làm nó rất ngon. Bên cạnh đó, tôi đã khám phá ra nhiều công thức để tạo nên món ăn ngón trên Joy Cooking. Cám ơn rất nhiều!'
+        }]
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "context-dark position-relative" }, [
+    _c(
+      "div",
+      {
+        staticClass: "rd-parallax",
+        attrs: { "data-on": "false", "data-md-on": "true" }
+      },
+      [
+        _c("div", {
+          staticClass: "rd-parallax-layer",
+          attrs: {
+            "data-speed": "0.2",
+            "data-type": "media",
+            "data-url": this.Testimonials.backgroundImageUrl
+          }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "rd-parallax-layer",
+            attrs: { "data-speed": "0.05", "data-type": "html" }
+          },
+          [
+            _c("div", [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "owl-carousel owl-carousel-default veil-xl-owl-dots veil-owl-nav reveal xl-owl-nav",
+                  attrs: {
+                    "data-items": "1",
+                    "data-nav": "true",
+                    "data-dots": "true",
+                    "data-loop": "true",
+                    "data-nav-class":
+                      '["owl-prev fa-angle-left", "owl-next fa-angle-right"]'
+                  }
+                },
+                _vm._l(this.Testimonials.quotes, function(quote) {
+                  return _c("div", [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "shell section-70 section-xl-100 section-xl-bottom-114"
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "range range-xs-center range-xs-middle"
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "cell-sm-3 text-center cell-sm-push-2"
+                              },
+                              [
+                                _c("div", { staticClass: "img-rect-sm" }, [
+                                  _c("div", [
+                                    _c("img", {
+                                      staticClass:
+                                        "img-responsive reveal-inline-block",
+                                      attrs: {
+                                        src: quote.quoter.avatar.url,
+                                        alt: quote.quoter.avatar.alt,
+                                        width: "230",
+                                        height: "230"
+                                      }
+                                    })
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "cell-sm-8 cell-lg-9 cell-sm-push-1"
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "quote-classic-boxed text-left"
+                                  },
+                                  [
+                                    _c("div", { staticClass: "quote-body" }, [
+                                      _c("q", [
+                                        _vm._v(
+                                          "\n                            " +
+                                            _vm._s(quote.text) +
+                                            "\n                          "
+                                        )
+                                      ]),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "offset-top-30 text-right"
+                                        },
+                                        [
+                                          _c(
+                                            "cite",
+                                            { staticClass: "font-accent" },
+                                            [
+                                              _vm._v(
+                                                "\n                              " +
+                                                  _vm._s(quote.quoter.name) +
+                                                  "\n                            "
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            { staticClass: "offset-top-5" },
+                                            [
+                                              _c(
+                                                "p",
+                                                {
+                                                  staticClass:
+                                                    "text-dark text-italic"
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                " +
+                                                      _vm._s(
+                                                        quote.quoter.address
+                                                      ) +
+                                                      "\n                              "
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                })
+              )
+            ])
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6f392182", module.exports)
   }
 }
 
