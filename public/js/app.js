@@ -114,6 +114,7 @@ Vue.component('features-recipes', __webpack_require__(7));
 Vue.component('greetings', __webpack_require__(46));
 Vue.component('swiped-masthead', __webpack_require__(49));
 Vue.component('specials-selection', __webpack_require__(54));
+Vue.component('sub-introduction', __webpack_require__(59));
 
 var app = new Vue({
   el: '#app'
@@ -14568,6 +14569,214 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-3e982b42", module.exports)
+  }
+}
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(60)
+}
+var normalizeComponent = __webpack_require__(13)
+/* script */
+var __vue_script__ = __webpack_require__(62)
+/* template */
+var __vue_template__ = __webpack_require__(63)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/SubIntroductionComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6089a54c", Component.options)
+  } else {
+    hotAPI.reload("data-v-6089a54c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(61);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(11)("597c7bc2", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6089a54c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SubIntroductionComponent.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-6089a54c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SubIntroductionComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      SubIntroduction: {
+        backgroundImageUrl: 'images/parallax-02.jpg',
+        title: 'Theo dõi, Học và Nấu',
+        description: 'Từ mong muốn, chúng tôi muốn mang đến bạn những công thức nấu ăn phù hợp nhất từ những món súp truyền thống, món  <br class="visible-lg-inline"> gà nướng thơm nồng đến những chiếc bánh và mòn kem tráng miệng.',
+        linkTo: 'recipes.html',
+        buttonTitle: 'Bắt đầu'
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "text-center" }, [
+    _c(
+      "div",
+      {
+        staticClass: "rd-parallax",
+        attrs: { "data-on": "false", "data-md-on": "true" }
+      },
+      [
+        _c("div", {
+          staticClass: "rd-parallax-layer",
+          attrs: {
+            "data-speed": "0.35",
+            "data-type": "media",
+            "data-url": this.SubIntroduction.backgroundImageUrl
+          }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "rd-parallax-layer",
+            attrs: { "data-speed": "0.05", "data-type": "html" }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "shell section-70 section-md-155 context-dark" },
+              [
+                _c("h2", { staticClass: "text-bold" }, [
+                  _vm._v(_vm._s(this.SubIntroduction.title))
+                ]),
+                _vm._v(" "),
+                _c("div", {
+                  staticClass: "offset-top-35",
+                  domProps: {
+                    innerHTML: _vm._s(this.SubIntroduction.description)
+                  }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "offset-top-35 offset-md-top-50" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { href: this.SubIntroduction }
+                    },
+                    [_vm._v(_vm._s(this.SubIntroduction.buttonTitle))]
+                  )
+                ])
+              ]
+            )
+          ]
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6089a54c", module.exports)
   }
 }
 
