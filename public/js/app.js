@@ -111,6 +111,8 @@ module.exports = __webpack_require__(16);
 window.Vue = __webpack_require__(3);
 
 Vue.component('features-recipes', __webpack_require__(7));
+Vue.component('greetings', __webpack_require__(46));
+Vue.component('swiped-masthead', __webpack_require__(49));
 
 var app = new Vue({
   el: '#app'
@@ -13137,10 +13139,6 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(8)
-}
 var normalizeComponent = __webpack_require__(13)
 /* script */
 var __vue_script__ = __webpack_require__(14)
@@ -13149,7 +13147,7 @@ var __vue_template__ = __webpack_require__(15)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -13184,46 +13182,8 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(9);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(11)("455fdcf8", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fd90ec\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FeaturesRecipesComponent.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-55fd90ec\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FeaturesRecipesComponent.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(10)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 8 */,
+/* 9 */,
 /* 10 */
 /***/ (function(module, exports) {
 
@@ -13865,6 +13825,498 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */,
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(13)
+/* script */
+var __vue_script__ = __webpack_require__(47)
+/* template */
+var __vue_template__ = __webpack_require__(48)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/GreetingsComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-cb7f808c", Component.options)
+  } else {
+    hotAPI.reload("data-v-cb7f808c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      Greetings: {
+        backgroundImage: {
+          url: 'images/home-01-620-350.jpg',
+          alt: 'Greetings background'
+        },
+        firstStatement: 'Chào mừng bạn đến với <br class="visible-lg-inline"> Joy Cooking',
+        secondStatement: 'Good Food is a unique resource, designed as a single place for new recipes lovers and food enthusiasts. It features the largest collection of professionally-tested recipes online from food experts at the magazines and cookbooks you love and trust--including Cooking Light, Southern Living, Sunset, Coastal Living, Real Simple, and more.',
+        viewMoreTitle: 'Tìm hiểu thêm'
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "section-70 section-md-100" }, [
+    _c("div", { staticClass: "shell" }, [
+      _c(
+        "div",
+        { staticClass: "range text-sm-left range-sm-justify range-sm-reverse" },
+        [
+          _c("div", { staticClass: "cell-sm-5" }, [
+            _c(
+              "div",
+              {
+                staticClass: "img-wrap-2 view-animate zoomInSmall duration-06"
+              },
+              [
+                _c("figure", [
+                  _c("img", {
+                    staticClass: "img-responsive reveal-inline-block",
+                    attrs: {
+                      src: this.Greetings.backgroundImage.url,
+                      width: "620",
+                      height: "350",
+                      alt: this.Greetings.backgroundImage.alt
+                    }
+                  })
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "cell-sm-7 offset-top-50 offset-sm-top-0" },
+            [
+              _c("h2", {
+                staticClass: "text-bold view-animate fadeInLeftSm delay-06",
+                domProps: { innerHTML: _vm._s(this.Greetings.firstStatement) }
+              }),
+              _vm._v(" "),
+              _c("hr", {
+                staticClass:
+                  "divider bg-madison hr-sm-left-0 view-animate fadeInLeftSm delay-08"
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "offset-top-35 offset-md-top-60 view-animate fadeInLeftSm delay-1"
+                },
+                [
+                  _c("p", {
+                    domProps: {
+                      innerHTML: _vm._s(this.Greetings.secondStatement)
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "offset-top-30 view-animate fadeInLeftSm delay-12"
+                },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-icon btn-icon-right btn-madison",
+                      attrs: { href: "#" }
+                    },
+                    [
+                      _c("span", { staticClass: "icon fa-arrow-right" }),
+                      _c("span", [_vm._v(_vm._s(this.Greetings.viewMoreTitle))])
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-cb7f808c", module.exports)
+  }
+}
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(50)
+}
+var normalizeComponent = __webpack_require__(13)
+/* script */
+var __vue_script__ = __webpack_require__(52)
+/* template */
+var __vue_template__ = __webpack_require__(53)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/SwipedMastheadComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-e3676412", Component.options)
+  } else {
+    hotAPI.reload("data-v-e3676412", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(51);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(11)("c2db5778", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3676412\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SwipedMastheadComponent.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-e3676412\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SwipedMastheadComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      Masthead: {
+        backgroundImageUrl: 'images/slide-01-1920x810.jpg',
+        subTitle: 'Món ăn cho hôm nay',
+        title: 'Xà lách trộn cà rốt cùng phô-mát',
+        description: 'Lúc nào món rau sà lách vẫn có hương vị cũ? Chắc hẳn bạn sẽ hứng thú với công thức đơn giản với sự kết hợp của các nguyên liệu có thể bạn đã có sẵn trong bếp của mình theo một cách thú vị hơn.',
+        viewRecipesTitle: 'Xem công thức'
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "swiper-container swiper-slider",
+      attrs: {
+        "data-height": "100vh",
+        "data-loop": "false",
+        "data-dragable": "false",
+        "data-min-height": "480px",
+        "data-slide-effect": "true"
+      }
+    },
+    [
+      _c("div", { staticClass: "swiper-wrapper" }, [
+        _c(
+          "div",
+          {
+            staticClass: "swiper-slide",
+            staticStyle: { "background-position": "80% center" },
+            attrs: { "data-slide-bg": this.Masthead.backgroundImageUrl }
+          },
+          [
+            _c("div", { staticClass: "swiper-slide-caption" }, [
+              _c("div", { staticClass: "container" }, [
+                _c(
+                  "div",
+                  { staticClass: "range range-xs-center range-lg-left" },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "cell-md-9 text-md-left cell-xs-10" },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "jumbotron-custom bg-white-transparent"
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "top-banner",
+                                staticStyle: { "z-index": "900" }
+                              },
+                              [
+                                _c("h4", { staticClass: "text-white" }, [
+                                  _vm._v(_vm._s(this.Masthead.subTitle))
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", [
+                              _c("h1", { staticClass: "text-bold" }, [
+                                _c("a", { attrs: { href: "#" } }, [
+                                  _vm._v(_vm._s(this.Masthead.title))
+                                ])
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "offset-top-20 offset-xs-top-40 offset-xl-top-60"
+                              },
+                              [
+                                _c(
+                                  "h5",
+                                  { staticClass: "text-regular font-default" },
+                                  [_vm._v(_vm._s(this.Masthead.description))]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "offset-top-20 offset-xl-top-40" },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    staticClass: "btn btn-primary",
+                                    attrs: { href: "#" }
+                                  },
+                                  [
+                                    _vm._v(
+                                      _vm._s(this.Masthead.viewRecipesTitle)
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-e3676412", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

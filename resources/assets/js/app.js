@@ -7,7 +7,9 @@
 window.Vue = require('vue');
 
 Vue.component('features-recipes', require('./components/FeaturesRecipesComponent.vue'));
- 
+Vue.component('greetings', require('./components/GreetingsComponent.vue'));
+Vue.component('swiped-masthead', require('./components/SwipedMastheadComponent.vue'))
+
 const app = new Vue({
   el: '#app'
 });
