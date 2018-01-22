@@ -12,7 +12,7 @@
     <sub-introduction></sub-introduction>
     <latest-recipes></latest-recipes>
     <testimonials></testimonials>
-    @include('elements/_latest-posts')
+    <latest-posts></latest-posts>
   </main>
 
 @endsection

@@ -529,6 +529,7 @@ Vue.component('specials-selection', __webpack_require__(22));
 Vue.component('sub-introduction', __webpack_require__(57));
 Vue.component('latest-recipes', __webpack_require__(62));
 Vue.component('testimonials', __webpack_require__(67));
+Vue.component('latest-posts', __webpack_require__(72));
 
 var app = new Vue({
   el: '#app'
@@ -15551,6 +15552,299 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-6f392182", module.exports)
+  }
+}
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(73)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(75)
+/* template */
+var __vue_template__ = __webpack_require__(76)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/LatestPostsComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-763e97f0", Component.options)
+  } else {
+    hotAPI.reload("data-v-763e97f0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(74);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("6fff7c16", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-763e97f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LatestPostsComponent.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-763e97f0\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LatestPostsComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    getPostsList: function getPostsList(postsList) {
+      var result = [];
+      for (var index = 0; index < this.LatestPosts.posts.length; index += 2) {
+        if (index < this.LatestPosts.posts.length - 1) {
+          result.push([this.LatestPosts.posts[index], this.LatestPosts.posts[index + 1]]);
+        } else {
+          result.push([this.LatestPosts.posts[index]]);
+        }
+      }
+      return result;
+    }
+  },
+  data: function data() {
+    return {
+      LatestPosts: {
+        title: 'Bài viết mới nhất',
+        posts: [{
+          title: 'Bạn sẽ cần đến 10 cách chế biến hải sản này',
+          description: 'Không phải ai cũng cảm thấy thoải moái khi chế biến món ăn từ hải sản. Sẽ rất nhiều lần chúng ta làm cho món hải sản thiếu đi điều gi đó.',
+          time: '2 ngày trước',
+          image: {
+            url: 'images/blog/news-04-770x500.jpg',
+            alt: 'Post Image'
+          },
+          linkTo: 'new-posts-page.html'
+        }, {
+          title: '15 phút với món xà lách',
+          description: 'Hôm nay, với 15 phút dành cho món xà lách trộn đơn giản để bổ sung thêm chất xơ cùng vitamin.',
+          time: '3 ngày trước',
+          image: {
+            url: 'images/blog/news-05-770x500.jpg',
+            alt: 'Post Image'
+          },
+          linkTo: 'new-posts-page.html'
+        }, {
+          title: 'Bánh xăng uých cho bữa trưa',
+          description: 'Bữa trưa nhanh cùng bánh mì vẫn đảm bảo năng lượng và dinh dưỡng cho ngày làm việc còn lại.',
+          time: '5 ngày trước',
+          image: {
+            url: 'images/blog/news-08-770x500.jpg',
+            alt: 'Post Image'
+          },
+          linkTo: 'new-posts-page.html'
+        }]
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "bg-catskill" }, [
+    _c("div", { staticClass: "shell section-70 section-md-114" }, [
+      _c(
+        "h2",
+        { staticClass: "text-bold view-animate fadeInUpSmall delay-04" },
+        [_vm._v("\n      " + _vm._s(this.LatestPosts.title) + "\n    ")]
+      ),
+      _vm._v(" "),
+      _c("hr", {
+        staticClass: "divider bg-madison view-animate fadeInUpSmall delay-06"
+      }),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "range offset-top-60 text-left range-xs-center" },
+        _vm._l(this.getPostsList, function(posts, index) {
+          return _c("div", { staticClass: "cell-md-4" }, [
+            _c(
+              "div",
+              { staticClass: "range" },
+              _vm._l(posts, function(post) {
+                return _c(
+                  "div",
+                  { staticClass: "cell-sm-6 cell-md-12 offset-md-top-30" },
+                  [
+                    _c(
+                      "article",
+                      {
+                        staticClass:
+                          "post-news post-news-mod-1 view-animate fadeInRightSm delay-1"
+                      },
+                      [
+                        _c("a", { attrs: { href: post.linkTo } }, [
+                          _c("img", {
+                            staticClass: "img-responsive img-fullwidth",
+                            attrs: {
+                              src: post.image.url,
+                              alt: post.image.alt,
+                              width: "370",
+                              height: "240"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "post-news-body" }, [
+                            _c("h6", [
+                              _c("a", { attrs: { href: post.linkTo } }, [
+                                _vm._v(_vm._s(post.title))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "offset-top-20" }, [
+                              _c("p", [_vm._v(_vm._s(post.description))])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "post-news-meta offset-top-20" },
+                              [
+                                _c("span", {
+                                  staticClass:
+                                    "icon icon-xs mdi mdi-calendar-clock text-middle text-madison"
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "span",
+                                  {
+                                    staticClass:
+                                      "text-middle inset-left-10 text-italic text-black"
+                                  },
+                                  [_vm._v(_vm._s(post.time))]
+                                )
+                              ]
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              })
+            )
+          ])
+        })
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-763e97f0", module.exports)
   }
 }
 
