@@ -8,7 +8,8 @@ window.Vue = require('vue');
 
 Vue.component('features-recipes', require('./components/FeaturesRecipesComponent.vue'));
 Vue.component('greetings', require('./components/GreetingsComponent.vue'));
-Vue.component('swiped-masthead', require('./components/SwipedMastheadComponent.vue'))
+Vue.component('swiped-masthead', require('./components/SwipedMastheadComponent.vue'));
+Vue.component('specials-selection', require('./components/SpecialsSelectionComponent.vue'));
 
 const app = new Vue({
   el: '#app'

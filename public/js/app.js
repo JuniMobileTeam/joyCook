@@ -113,6 +113,7 @@ window.Vue = __webpack_require__(3);
 Vue.component('features-recipes', __webpack_require__(7));
 Vue.component('greetings', __webpack_require__(46));
 Vue.component('swiped-masthead', __webpack_require__(49));
+Vue.component('specials-selection', __webpack_require__(54));
 
 var app = new Vue({
   el: '#app'
@@ -14315,6 +14316,258 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-e3676412", module.exports)
+  }
+}
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(55)
+}
+var normalizeComponent = __webpack_require__(13)
+/* script */
+var __vue_script__ = __webpack_require__(57)
+/* template */
+var __vue_template__ = __webpack_require__(58)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/SpecialsSelectionComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3e982b42", Component.options)
+  } else {
+    hotAPI.reload("data-v-3e982b42", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(56);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(11)("09a42416", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e982b42\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SpecialsSelectionComponent.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3e982b42\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./SpecialsSelectionComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(10)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.meal-item-container {\n  position: relative;\n  min-height: 140px;\n  text-align: center;\n}\n.bottom-align-text {\n  position: absolute;\n  bottom: 0;\n  right: 25%;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      SpecialsSelection: {
+        title: 'Món ăn tuyển chọn',
+        description: 'Cùng với JoyCooking các bạn có thể tìm thấy công thức nấu ăn được xếp nhóm theo <br class="visible-lg-inline"> bữa ăn và nguyên liệu.',
+        meals: [{
+          icon: {
+            url: 'images/breakfast_icon.png',
+            alt: 'Breakfast Icon'
+          },
+          text: 'Bữa sáng',
+          divClass: '',
+          delayClass: 'delay-04'
+        }, {
+          icon: {
+            url: 'images/lunch_icon.png',
+            alt: 'Lunch Icon'
+          },
+          text: 'Bữa trưa',
+          divClass: 'offset-top-65 offset-sm-top-0',
+          delayClass: 'delay-06'
+        }, {
+          icon: {
+            url: 'images/dinner_icon.png',
+            alt: 'Dinner Icon'
+          },
+          text: 'Bữa tối',
+          divClass: 'offset-top-65 offset-md-top-0',
+          delayClass: 'delay-1'
+        }, {
+          icon: {
+            url: 'images/custom_meal_icon.png',
+            alt: 'Meal Icon'
+          },
+          text: 'Món ăn tùy thích',
+          divClass: 'offset-top-65 offset-md-top-0',
+          delayClass: 'delay-1'
+        }]
+      }
+    };
+  }
+});
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "section-70 section-md-114" }, [
+    _c("div", { staticClass: "shell" }, [
+      _c("h2", [_vm._v(_vm._s(this.SpecialsSelection.title))]),
+      _vm._v(" "),
+      _c("hr", {
+        staticClass: "divider bg-madsion view-animate fadeInRightSm delay-06"
+      }),
+      _vm._v(" "),
+      _c("div", {
+        staticClass:
+          "offset-top-35 offset-md-top-60 view-animate fadeInRightSm delay-08",
+        domProps: { innerHTML: _vm._s(this.SpecialsSelection.description) }
+      }),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "range range-xs-center range-md-left offset-top-65 counters"
+        },
+        _vm._l(this.SpecialsSelection.meals, function(meal) {
+          return _c(
+            "div",
+            {
+              staticClass: "cell-sm-6 cell-md-3 meal-item-container",
+              class: [meal.divClass]
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "unit unit-vertical unit-spacing-xs view-animate zoomInSmall bottom-align-text",
+                  class: [meal.deplayClass]
+                },
+                [
+                  _c("div", { staticClass: "unit-left" }, [
+                    _c("img", {
+                      attrs: { src: meal.icon.url, alt: meal.icon.alt }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "unit-body" }, [
+                    _c("h6", [
+                      _c("div", { staticClass: "text-bold" }, [
+                        _vm._v(
+                          "\n                " +
+                            _vm._s(meal.text) +
+                            "\n              "
+                        )
+                      ])
+                    ])
+                  ])
+                ]
+              )
+            ]
+          )
+        })
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3e982b42", module.exports)
   }
 }
 

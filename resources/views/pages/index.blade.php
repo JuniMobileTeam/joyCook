@@ -8,7 +8,7 @@
     <swiped-masthead></swiped-masthead>
     <greetings></greetings>
     <features-recipes></features-recipes>
-    @include('elements/_special-selections')
+    <specials-selection></specials-selection>
     @include('elements/_sub-introduction')
     @include('elements/_latest-recipes')
     @include('elements/_testimonials')
