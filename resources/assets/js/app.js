@@ -3,6 +3,16 @@
  */
 "use strict";
 
+
+window.Vue = require('vue');
+
+Vue.component('features-recipes', require('./components/FeaturesRecipesComponent.vue'));
+ 
+const app = new Vue({
+  el: '#app'
+});
+
+
 var userAgent = navigator.userAgent.toLowerCase(),
     initialDate = new Date(),
 

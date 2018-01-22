@@ -7,7 +7,7 @@
   <main class="page-content">
     @include('elements/_masthead-swiper')
     @include('elements/_greetings-statements')
-    @include('elements/_features-foods')
+    <features-recipes></features-recipes>
     @include('elements/_special-selections')
     @include('elements/_sub-introduction')
     @include('elements/_latest-recipes')
