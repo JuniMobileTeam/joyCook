@@ -33,6 +33,9 @@
           </div><!-- end div.range -->
         </div><!-- end div.cell-md-4 -->
       </div><!-- end div.range.offset-top-60 -->
+      <div class="offset-top-50">
+        <a :href="this.LatestPosts.viewAll.url" class="btn btn-primary">{{ this.LatestPosts.viewAll.text }}</a>
+      </div>
     </div><!-- end div.shell-section-70 -->
   </section><!-- end div.bg-catskill -->
 </template>
@@ -56,6 +59,10 @@ export default {
     return {
       LatestPosts: {
         title: 'Bài viết mới nhất',
+        viewAll: {
+          text: 'Xem tất cả',
+          url: 'modern-news.html'
+        },
         posts: [
           {
             title: 'Bạn sẽ cần đến 10 cách chế biến hải sản này',

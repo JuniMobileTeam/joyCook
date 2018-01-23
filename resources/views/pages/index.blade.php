@@ -13,6 +13,7 @@
     <latest-recipes></latest-recipes>
     <testimonials></testimonials>
     <latest-posts></latest-posts>
+    <gallery-recipes></gallery-recipes>
   </main>
 
 @endsection
