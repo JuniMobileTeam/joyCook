@@ -15,6 +15,7 @@
     <latest-posts></latest-posts>
     <gallery-recipes></gallery-recipes>
     <contact-info></contact-info>
+    <footer-info></footer-info>
   </main>
 
 @endsection

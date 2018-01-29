@@ -16,6 +16,7 @@ Vue.component('testimonials', require('./components/TestimonialsComponent.vue'))
 Vue.component('latest-posts', require('./components/LatestPostsComponent.vue'));
 Vue.component('gallery-recipes', require('./components/GalleryRecipesComponent.vue'));
 Vue.component('contact-info', require('./components/ContactInfoComponent.vue'));
+Vue.component('footer-info', require('./components/FooterComponent.vue'));
 
 const app = new Vue({
   el: '#app'
