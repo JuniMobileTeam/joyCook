@@ -14,6 +14,7 @@
     <testimonials></testimonials>
     <latest-posts></latest-posts>
     <gallery-recipes></gallery-recipes>
+    <contact-info></contact-info>
   </main>
 
 @endsection
