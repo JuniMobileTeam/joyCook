@@ -52,9 +52,63 @@
                 <!-- Login/Register section -->
                 <div class="rd-navbar-top-panel-right-part">
                   <div class="rd-navbar-top-panel-left-part">
-                    
+                    <div class="unit unit-horizontal unit-middle unit-spacing-xxs">
+                      <div class="unit-left">
+                        <span class="icon mdi mdi-login text-middle"></span>
+                      </div><!-- end div.unit-left -->
+                      <div class="unit-body">
+                        <a href="login-register.html">Đăng nhập/Đăng ký</a>
+                      </div>
+                    </div><!-- end div.unit unit-horizontal -->
                   </div><!-- end div.rd-navbar-top-panel-left-part -->
                 </div><!-- end div.rd-navbar-top-panel-right-part -->
+                <!-- end Login/Register section -->
+
+                <!-- Logo and Menu -->
+                <div class="rd-navbar-menu-wrap clearfix">
+                  <!-- Logo -->
+                  <div class="rd-navbar-brand">
+                    <a href="/" class="reveal-inline-block">
+                      <div class="unit unit-xs-middle unit-xl unit-xl-horizontal unit-spacing-xxs">
+                        <div class="unit-left">
+                          <img width=89 height=89 src="images/logo-170x172.png" alt="Cook logo">
+                        </div>
+                        <div class="unit-body">
+                          <div class="rd-navbar-bran-title">
+                            Joy Of Cook
+                          </div>
+                          <div class="rd-navbar-brand-slogan">
+                            Bữa cơm hạnh phúc
+                          </div>
+                        </div>
+                      </div><!-- end div.unit-spacing-xxs -->
+                    </a><!-- end a.reveal-inline-block -->
+                  </div><!-- end div.rd-navbar-brand -->
+                  <!-- end logo -->
+
+                  <!-- Menu -->
+                  <div class="rd-navbar-nav-wrap">
+                    <div class="rd-navbar-mobile-scroll">
+                      <div class="rd-navbar-mobile-header-wrap">
+                        <!-- navbar brand mobile -->
+                        <div class="rd-navbar-mobile-brand">
+                          <a href="/">
+                            <img width=89 height=89 src="images/logo-170x172.png" alt="Cook logo">
+                          </a>
+                        </div><!-- end div.rd-navbar-brand-mobile -->
+                        <!-- end navbar brand mobile -->
+                        <!-- navbar nav -->
+                        <div class="rd-navbar-nav">
+                          <li><a href="/"></a>Trang chủ</li>
+                          <li class="rd-navbar--has-dropdown rd-navbar-submenu"></li>
+                        </div><!-- end div.rd-navbar-nav -->
+                        <!-- end navbar nav -->
+                      </div><!-- end div.rd-navbar-mobile-header-wrap -->
+                    </div><!-- end div.rd-navbar-mobile-scroll -->
+                  </div><!-- end div.rd-navbar-nav-wrap -->
+                  <!-- end Menu -->
+                </div><!-- end div.menu-wrap.clearfix -->
+                <!-- end Logo and Menu -->
               </ul><!-- end ul.list-unstyled -->
             </div><!-- end rd-navbar-top-panel-left-part -->
           </div><!-- end div.rd-navbar-top-panel -->
