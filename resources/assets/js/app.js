@@ -6,6 +6,7 @@
 
 window.Vue = require('vue');
 
+Vue.component('navbar-hamburger', require('./components/NavBarHamburgerComponent.vue'));
 Vue.component('features-recipes', require('./components/FeaturesRecipesComponent.vue'));
 Vue.component('greetings', require('./components/GreetingsComponent.vue'));
 Vue.component('swiped-masthead', require('./components/SwipedMastheadComponent.vue'));

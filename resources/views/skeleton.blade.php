@@ -5,7 +5,7 @@
   </head>
   <body>
     <div id="app">
-      @include('elements._ui-rd-navbar-hamburger-menu')
+      <navbar-hamburger></navbar-hamburger>
       <div class="page text-center">
         @yield('content')
       </div>
